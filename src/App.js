@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react'
+import { CalProvider } from './context/CalContext'
+import Screen from './components/Screen'
+import Functioning from './components/Functioning'
 
 function App() {
+  const [result, setResult] = useState(0)
+  const [prevCalculation, setPrevCalculation] = useState('')
+  const [calculation, setCalculation] = useState('')
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <CalProvider
+      value={{
+        result,
+        setResult,
+        calculation,
+        setCalculation,
+        prevCalculation,
+        setPrevCalculation,
+      }}
+    >
+      <div className='app'>
+        <Screen />
+        <Functioning />
+      </div>
+    </CalProvider>
+  )
 }
 
-export default App;
+export default App

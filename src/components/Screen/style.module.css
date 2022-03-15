@@ -1,0 +1,21 @@
+.screen {
+  width: -webkit-fill-available;
+  height: 8rem;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #deeff7;
+  padding: 0.6rem;
+  margin-bottom: 0.6rem;
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: right;
+}
+
+.calculation {
+  font-weight: 600;
+}
+
+.result {
+  font-size: x-large;
+  font-weight: 700;
+}

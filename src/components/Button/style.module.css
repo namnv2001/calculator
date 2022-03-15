@@ -1,0 +1,13 @@
+.method {
+  background-color: #fffd9f;
+  color: #afac02;
+}
+
+.result {
+  background-color: #ffb922;
+  color: rgb(148, 133, 1);
+}
+
+.span2 {
+  grid-column: 1 / span 2;
+}
