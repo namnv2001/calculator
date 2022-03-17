@@ -1,11 +1,24 @@
+@import '../../styles/index.css';
+
 .screen {
   width: -webkit-fill-available;
   height: 8rem;
   border-radius: 10px;
   overflow: hidden;
-  background-color: #deeff7;
+  color: var(--button-default-text);
+  background-color: var(--button-default);
   padding: 0.6rem;
   margin-bottom: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mode {
+  cursor: pointer;
+}
+
+.numbers {
   display: flex;
   flex-direction: column-reverse;
   text-align: right;

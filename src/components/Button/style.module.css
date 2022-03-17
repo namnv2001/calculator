@@ -1,11 +1,13 @@
+@import '../../styles/index.css';
+
 .method {
-  background-color: #fffd9f;
-  color: #afac02;
+  background-color: var(--button-default);
+  color: var(--button-method-text);
 }
 
 .result {
-  background-color: #ffb922;
-  color: rgb(148, 133, 1);
+  background-color: var(--button-result);
+  color: var(--button-result-text);
 }
 
 .span2 {
